@@ -23,13 +23,13 @@ while (counter < 20 && replyId != null){
 		"fields": ["first_name", "last_name"]
 	});
 	var msg = result.items[0];
-	var name = result.profiles[0].first_name + " " + result.profiles[0].last_name;
+	var lname = result.profiles[0].first_name + " " + result.profiles[0].last_name;
 
 	replyId = msg.reply_message.conversation_message_id;
 
 	var from = "assistant";
 	if (msg.from_id != -groupId){
-		from = name;
+		from = lname;
 	}
 	arr.unshift([from, msg.text]);
 
