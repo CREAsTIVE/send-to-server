@@ -19,7 +19,7 @@ while (counter < 20 && replyId != null){
 	var result = API.messages.getByConversationMessageId({
 		"peer_id": peerId, 
 		"conversation_message_ids": [replyId],
-		"extended": 0, 
+		"extended": 1, 
 		"fields": ["first_name", "last_name"]
 	});
 	var msg = result.items[0];
