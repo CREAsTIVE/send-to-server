@@ -20,9 +20,6 @@ while (counter < 20 && replyId != null){
 	if (msg.from_id != -groupId){
 		from = "user";
 	}
-	/*if (msg.text[0] == prefix) {
-		msg.text = msg.text.substr(prefixLen, msg.text.length);
-	}*/
 	arr.unshift([from, msg.text]);
 
 	counter = counter + 1; 
